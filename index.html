@@ -5,58 +5,134 @@
 <html lang="es">
 
 <head>
-<!-- sirve para que entienda caracteres no english-->
+    <!-- sirve para que entienda caracteres no english-->
     <meta charset="UTF-8">
-<!--    -->
+    <!--    -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- te sirve para la descripcion debajo del buscador de google   -->
+    <!-- te sirve para la descripcion debajo del buscador de google   -->
     <meta name="description" content="Primer ejercicio de Curso definitivo de HTML y CSS">
-<!-- te sirve para permitirle a los robots de los buscadores que esamos autorizando que agreguen la pagina a busquedas-->    
+    <!-- te sirve para permitirle a los robots de los buscadores que esamos autorizando que agreguen la pagina a busquedas-->
     <meta name="robots" content="index,follow">
-<!-- sirve para hacer la pagina responsive... me guarda el ancho de la pantalla-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-<!-- es el titulo para ver encima de la pestaña de la pagina-->    
-    <title>Document</title>
-<!-- linkeo los archivos que sirven-->
+    <!-- sirve para hacer la pagina responsive... me guarda el ancho de la pantalla-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- es el titulo para ver encima de la pestaña de la pagina-->
+    <title>Calendario</title>
+    <!-- linkeo los archivos que sirven-->
     <link rel="stylesheet" href="estilos/estilo.css">
 </head>
+
 <body>
     <header>
-        <nav> 
+        <nav>
 
         </nav>
-    </header> 
+    </header>
     <main>
-        <section>
+        <form action="">
+
+            <label for="nombre">
+                <span> ¿Cuál es tu nombre? </span>
+                <input type="text" id="nombre" placeholder="José Pérez" name="nombre">
+            </label>
+
+            <label for="calendario">
+                <span>¿Cuándo queres viajar?</span>
+                <input type="datetime-local" id="calendario" name="calendario">
+            </label>           
+
+            <label for=" enviar">
+                <input type="submit" id="enviar">
+            </label>
+
+        </form>
+
+
+        <!-- <section>
             <h3>Soy la lista del super!</h3>
             <ul>
                 <li> 
                     Frutas
                     <ol>
                         <li> <a href="https://www.paulinacocina.net/tarta-de-manzanas-muy-facil-tarta-taringa/1073">   Manzana  </a> </li>
-                        <li>Platano</li>
+                        <figure>
+                            <img 
+                                src="imagenes/manzana.jpg" 
+                                alt="manzanita" 
+                                width="100"
+                            />
+                            <figcaption> 
+                                las manzanas son ricas
+                            </figcaption>
+                        </figure>
+                        
+                        <li> <a href="https://www.directoalpaladar.com/recetario/aprovechar-platanos-maduros-recetas-bizcochos-tartas-helados">   Platano </a> </li>
+                        <figure>
+                            <img 
+                                src="imagenes/banana.jpg" 
+                                alt="banana rica" 
+                                width="100"
+                            />
+                            <figcaption> 
+                                las bananas son ricas
+                            </figcaption>
+                        </figure>
                     </ol>
                 </li>
                 <li> 
                     Carnes
                     <ol>
-                        <li>Pollo</li>
-                        <li>Carne molida</li>
+                        <li> <a href="https://www.cocinacaserayfacil.net/recetas-con-pollo/" >  Pollo  </a> </li>
+                        <figure>
+                            <img 
+                                src="imagenes/pollo.jpg" 
+                                alt="pollin" 
+                                width="100"
+                            />
+                            <figcaption>
+                                los pollitos son lindos
+                            </figcaption>
+                        </figure>
+                        <li> <a href="https://www.recetasgratis.net/receta-de-carne-molida-con-papas-42329.html" >Carne molida </a> </li>
+                        <figure>
+                            <img 
+                                src="imagenes/carne_picada.jpg" 
+                                alt="carnecita" 
+                                width="100"
+                            />
+                            <figcaption>
+                                pobre vaquita
+                            </figcaption>
+                        </figure>
                     </ol>
                 </li>
                 <li> 
                     Verduras
                     <ol>
-                        <li>Limón</li>
+                        <li> <a href="https://www.pequerecetas.com/receta/10-postres-con-limon/" >  Limón  </a>  </li>
+                        <figure>
+                           <img 
+                               src="imagenes/limon.jpg" 
+                               alt="limoncete" 
+                               width="100"
+                            />
+                        </figure>
+
                         <li> <a href="https://www.hogarmania.com/cocina/recetas/aperitivos/croquetas-zanahoria-20005.html">   Zanahoria  </a>  </li>
+                        <figure>
+                            <img 
+                                src="imagenes/zanahoria.jpg" 
+                                alt="zanahorita" 
+                                width="100"
+                            />
+                        </figure>
                     </ol>
                 </li>
-            
         </section>
-        <p>Creado con amor</p>
-    </main>   
+        <p>Creado con amor</p> -->
+    </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
