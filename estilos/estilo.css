@@ -1,0 +1,60 @@
+img {
+    width: 2cm;
+    height: 2cm;
+}
+
+section {
+    border: 1px solid black;
+    border-width: 20;
+    width: 4.5cm;
+}
+
+span {
+    color: red;
+    padding-right: 1cm;
+ }
+
+
+
+.main-cuadro {
+    border: 1px solid gold;
+    padding-left: 3cm;
+    
+}
+
+.main-cuadro__item  {
+    color: blue ;
+    font-size: 20px;
+    padding: 0px;
+    display: inline-block;
+    border: 1px solid black;
+    
+}
+
+.main-cuadro__item__item li  {
+     align-content: center;
+     text-align: center;
+     color: gold ;
+     font-size: 20px
+ }
+
+ .main-cuadro__item__item>li>a:hover  {
+    align-content: center;
+    text-align: center;
+    color: brown ;
+    font-size: 40px
+}
+
+ .main-cuadro__item__item>li>a {
+    color: purple;
+    font-size: 20px
+}
+
+.main-cuadro__item__item>figure>figcaption {
+    color: green;
+    font-size: 20px
+} */
+
+.main-cuadro__item::after {
+    content: "f";
+}

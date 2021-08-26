@@ -19,6 +19,7 @@
     <title>Calendario</title>
     <!-- linkeo los archivos que sirven-->
     <link rel="stylesheet" href="estilos/estilo.css">
+    
 </head>
 
 <body>
@@ -28,108 +29,139 @@
         </nav>
     </header>
     <main>
-        <form action="">
-
-            <label for="nombre">
-                <span> ¿Cuál es tu nombre? </span>
-                <input type="text" id="nombre" placeholder="José Pérez" name="nombre">
-            </label>
-
-            <label for="calendario">
-                <span>¿Cuándo queres viajar?</span>
-                <input type="datetime-local" id="calendario" name="calendario">
-            </label>           
-
-            <label for=" enviar">
-                <input type="submit" id="enviar">
-            </label>
-
-        </form>
-
-
-        <!-- <section>
+        
             <h3>Soy la lista del super!</h3>
-            <ul>
-                <li> 
+            <ul class="main-cuadro">
+                <li class="main-cuadro__item"> 
                     Frutas
                     <ol>
-                        <li> <a href="https://www.paulinacocina.net/tarta-de-manzanas-muy-facil-tarta-taringa/1073">   Manzana  </a> </li>
+                    <section class="main-cuadro__item__item">
+                        <li > 
+                            <a href="https://www.paulinacocina.net/tarta-de-manzanas-muy-facil-tarta-taringa/1073">   Manzana  </a> 
+                        </li>
+                        
                         <figure>
                             <img 
                                 src="imagenes/manzana.jpg" 
                                 alt="manzanita" 
-                                width="100"
                             />
                             <figcaption> 
                                 las manzanas son ricas
                             </figcaption>
                         </figure>
-                        
-                        <li> <a href="https://www.directoalpaladar.com/recetario/aprovechar-platanos-maduros-recetas-bizcochos-tartas-helados">   Platano </a> </li>
+                    </section>
+
+                    <section class="main-cuadro__item__item">
+                        <li > <a href="https://www.directoalpaladar.com/recetario/aprovechar-platanos-maduros-recetas-bizcochos-tartas-helados">   Platano </a> </li>
                         <figure>
                             <img 
-                                src="imagenes/banana.jpg" 
-                                alt="banana rica" 
-                                width="100"
+                            src="imagenes/banana.jpg" 
+                            alt="banana rica" 
                             />
                             <figcaption> 
                                 las bananas son ricas
                             </figcaption>
                         </figure>
-                    </ol>
-                </li>
-                <li> 
+                    </section>
+                    </ol>    
+                </li>   
+                
+                <li class="main-cuadro__item"> 
                     Carnes
                     <ol>
-                        <li> <a href="https://www.cocinacaserayfacil.net/recetas-con-pollo/" >  Pollo  </a> </li>
+                    <section class="main-cuadro__item__item">
+                        <li > 
+                            <a href="https://www.cocinacaserayfacil.net/recetas-con-pollo/" >  Pollo  </a> 
+                        </li>
                         <figure>
                             <img 
-                                src="imagenes/pollo.jpg" 
-                                alt="pollin" 
-                                width="100"
+                            src="imagenes/pollo.jpg" 
+                            alt="pollin" 
                             />
                             <figcaption>
                                 los pollitos son lindos
                             </figcaption>
                         </figure>
-                        <li> <a href="https://www.recetasgratis.net/receta-de-carne-molida-con-papas-42329.html" >Carne molida </a> </li>
+                    </section> 
+
+                    <section class="main-cuadro__item__item">
+                       <li > <a href="https://www.recetasgratis.net/receta-de-carne-molida-con-papas-42329.html" >Carne molida </a> </li>
                         <figure>
                             <img 
-                                src="imagenes/carne_picada.jpg" 
-                                alt="carnecita" 
-                                width="100"
+                            src="imagenes/carne_picada.jpg" 
+                            alt="carnecita" 
                             />
                             <figcaption>
                                 pobre vaquita
                             </figcaption>
                         </figure>
+                    </section>
+
                     </ol>
                 </li>
-                <li> 
+                
+                
+                <li class="main-cuadro__item"> 
                     Verduras
                     <ol>
+                    <section class="main-cuadro__item__item">
                         <li> <a href="https://www.pequerecetas.com/receta/10-postres-con-limon/" >  Limón  </a>  </li>
                         <figure>
-                           <img 
-                               src="imagenes/limon.jpg" 
-                               alt="limoncete" 
-                               width="100"
+                            <img 
+                            src="imagenes/limon.jpg" 
+                            alt="limoncete" 
                             />
                         </figure>
-
-                        <li> <a href="https://www.hogarmania.com/cocina/recetas/aperitivos/croquetas-zanahoria-20005.html">   Zanahoria  </a>  </li>
+                    </section>
+                        
+                    <section class="main-cuadro__item__item">
+                        <li > 
+                            <a href="https://www.hogarmania.com/cocina/recetas/aperitivos/croquetas-zanahoria-20005.html">   Zanahoria  </a>  
+                        </li>
                         <figure>
                             <img 
-                                src="imagenes/zanahoria.jpg" 
-                                alt="zanahorita" 
-                                width="100"
+                            src="imagenes/zanahoria.jpg" 
+                            alt="zanahorita" 
                             />
                         </figure>
+                    </section>
                     </ol>
                 </li>
-        </section>
-        <p>Creado con amor</p> -->
-    </main>
+                
+            <p>Creado con amor</p>
+        </main>
+        <form action="">
+            <label for="nombre">
+                <span> ¿Cuál es tu nombre? </span>
+                <input type="text" id="nombre" placeholder="José Pérez" name="nombre" required>
+            </label>
+            <br>
+            <label for="ciudad">
+                <span>En cual ciudad vives?</span>
+                <input type="text" name="ciudad" id="ciudad" autocomplete="address-level1" required>
+            </label>
+            <br>
+            <label for="pais">
+                <span>Que cursos quieres?</span>
+                <input list="cursos" name="cursos" required>
+                <datalist id="cursos" >
+                    <option value="Javascript">Javascript</option>
+                    <option value="Diseño Web">Diseño Web</option>
+                    <option value="Front end">Front end</option>
+                    <option value="Back end">Back end</option>
+                </datalist>
+            </label>
+            <br>
+            <label for="calendario">
+                <span>¿Cuándo queres viajar?</span>
+                <input type="datetime-local" id="calendario" name="calendario" required>
+            </label>           
+            <br>
+            <label for=" enviar">
+                <input type="submit" id="enviar">
+            </label>
+            <br>
+        </form>
     <footer>
 
     </footer>
